@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catálogo de Lotes</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #333;
+      background-image: url('punata.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    header {
+      background-color: rgba(44, 62, 80, 0.9);
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .btn-volver {
+      display: inline-block;
+      margin: 1rem;
+      background-color: #1abc9c;
+      color: white;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    .catalogo {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Siempre 2 columnas */
+      gap: 2rem;
+    }
+
+    .lote-card {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .lote-card:hover {
+      transform: scale(1.02);
+    }
+
+    .lote-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .lote-content {
+      padding: 1rem;
+    }
+
+    .lote-content h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    .lote-content p {
+      margin-bottom: 0.75rem;
+      color: #555;
+    }
+
+    .lote-content a {
+      color: #1abc9c;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      .catalogo {
+        grid-template-columns: 1fr; /* 1 columna en móviles */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Catálogo de Lotes en Punata</h1>
+    <a href="index.html" class="btn-volver">← Volver al inicio</a>
+  </header>
+
+  <main>
+    <section class="catalogo">
+
+      
+      <div class="lote-card">
+        <img src="lote.1.jpg" alt="Lote 1">
+        <div class="lote-content">
+          <h3>TIPO 1</h3>
+          <p>Precio: $5190,0</p>
+          <p>Resumen: M2 222 a 236</p>
+          <a href="lote1.html">Ver más</a>
+        </div>
+      </div>
+
+     
+      <div class="lote-card">
+        <img src="lote.2.jpg" alt="Lote 1">
+        <div class="lote-content">
+          <h3>TIPO 2</h3>
+          <p>Precio: $6190,0</p>
+          <p>Resumen: M2 260 a 283</p>
+          <a href="lote2.html">Ver más</a>
+        </div>
+      </div>
+
+     
+      <div class="lote-card">
+        <img src="lote.3.jpg" alt="Lote 1">
+        <div class="lote-content">
+          <h3>TIPO 3</h3>
+          <p>Precio: $7290,0</p>
+          <p>Resumen: M2 298 a 309</p>
+          <a href="lote3.html">Ver más</a>
+        </div>
+      </div>
+
+      
+      <div class="lote-card">
+        <img src="lote.4.jpg" alt="Lote 1">
+        <div class="lote-content">
+          <h3>TIPO 4</h3>
+          <p>Precio: $7690,0</p>
+          <p>Resumen: M2 310 a 319</p>
+          <a href="lote4.html">Ver más</a>
+        </div>
+      </div>
+
+      
+      <div class="lote-card">
+        <img src="lote.5.jpg" alt="Lote 1">
+        <div class="lote-content">
+          <h3>TIPO 5</h3>
+          <p>Precio: $8090,0</p>
+          <p>Resumen: M2 320 a 355</p>
+          <a href="lote5.html">Ver más</a>
+        </div>
+      </div>
+
+      
+      <div class="lote-card">
+        <img src="lote.6.jpg" alt="Lote 1">
+        <div class="lote-content">
+          <h3>TIPO 6</h3>
+          <p>Precio: $8290,0</p>
+          <p>Resumen: M2 369 a 408</p>
+          <a href="lote6.html">Ver más</a>
+        </div>
+      </div>
+
+     
+      <div class="lote-card">
+        <img src="lote.7.jpg" alt="Lote 1">
+        <div class="lote-content">
+          <h3>TIPO 7</h3>
+          <p>Precio: $8790,0</p>
+          <p>Resumen: M2 430 a 470</p>
+          <a href="lote7.html">Ver más</a>
+        </div>
+      </div>
+
+      
+      <div class="lote-card">
+        <img src="lote.8.jpg" alt="Lote 1">
+        <div class="lote-content">
+          <h3>TIPO 8</h3>
+          <p>Precio: $9290,0</p>
+          <p>Resumen: M2 577+</p>
+          <a href="lote8.html">Ver más</a>
+        </div>
+      </div>
+
+    
+
+    </section>
+  </main>
+
+</body>
+</html>
